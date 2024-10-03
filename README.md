@@ -27,7 +27,7 @@ Prerequisites:<br />
 
 Design pattern used:<br />
 • MVVM<br />
-• Protocol Oriented Programming<br />
+• Object Oriented Programming<br />
 • Solid priciples applied<br />
 
 Requirements to acheived:<br />
