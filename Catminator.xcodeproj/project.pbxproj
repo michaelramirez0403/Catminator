@@ -120,6 +120,40 @@
 			path = MockHttpForTesting;
 			sourceTree = "<group>";
 		};
+		74088D2F2CAE3DDE00AF8CD4 /* CatmintorList */ = {
+			isa = PBXGroup;
+			children = (
+				74088D312CAE3E0100AF8CD4 /* ViewModel */,
+				74088D302CAE3DF400AF8CD4 /* View */,
+			);
+			path = CatmintorList;
+			sourceTree = "<group>";
+		};
+		74088D302CAE3DF400AF8CD4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74D010022CACFDF90027A18B /* CatminatorListVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		74088D312CAE3E0100AF8CD4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				74D010132CAD098A0027A18B /* CatViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		74088D322CAE3E2700AF8CD4 /* CatInfoVC */ = {
+			isa = PBXGroup;
+			children = (
+				74D0100F2CAD08FA0027A18B /* ViewModel */,
+				74D0100E2CAD08EF0027A18B /* View */,
+			);
+			path = CatInfoVC;
+			sourceTree = "<group>";
+		};
 		74A5717C2CACE000001F78E7 = {
 			isa = PBXGroup;
 			children = (
@@ -286,9 +320,9 @@
 		74D0100C2CAD08AB0027A18B /* Cats */ = {
 			isa = PBXGroup;
 			children = (
+				74088D322CAE3E2700AF8CD4 /* CatInfoVC */,
+				74088D2F2CAE3DDE00AF8CD4 /* CatmintorList */,
 				74D010102CAD090C0027A18B /* Cell */,
-				74D0100F2CAD08FA0027A18B /* ViewModel */,
-				74D0100E2CAD08EF0027A18B /* View */,
 			);
 			path = Cats;
 			sourceTree = "<group>";
@@ -304,7 +338,6 @@
 		74D0100E2CAD08EF0027A18B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				74D010022CACFDF90027A18B /* CatminatorListVC.swift */,
 				74D010192CAD2DB60027A18B /* CatInfoVC.swift */,
 			);
 			path = View;
@@ -313,7 +346,6 @@
 		74D0100F2CAD08FA0027A18B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				74D010132CAD098A0027A18B /* CatViewModel.swift */,
 				74D0101B2CAD447B0027A18B /* CatInfoViewModel.swift */,
 			);
 			path = ViewModel;
