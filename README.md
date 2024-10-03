@@ -1,3 +1,4 @@
+![Simulator Screenshot - iPhone 16 Pro - 2024-10-02 at 19 01 33](https://github.com/user-attachments/assets/bbbbe50b-eca1-4571-96d6-72353bc709a4)<br /> 
 ## Catminator
 This is a take home project for the client Albertson.<br />
 
@@ -20,15 +21,14 @@ Key Requirement:<br />
 
 ## Catminator App Introduction
 Prerequisites:<br />
- Xcode Version 16.0<br />
- Swift 5<br />
- UIKit App Delegate<br />
+• Xcode Version 16.0<br />
+• Swift 5<br />
+• UIKit App Delegate<br />
 
 Design pattern used:<br />
- MVVM<br />
- Protocol Oriented Programming<br />
- Abstraction<br />
- Solid priciples applied<br />
+• MVVM<br />
+• Protocol Oriented Programming<br />
+• Solid priciples applied<br />
 
 Requirements to acheived:
 • Project is written in Swift.<br />
@@ -42,8 +42,7 @@ Requirements to acheived:
 • Applied proper threading.<br />
 
 Screens for UI Design<br />
-![Simulator Screenshot - iPhone 16 Pro - 2024-10-02 at 19 01 33](https://github.com/user-attachments/assets/bbbbe50b-eca1-4571-96d6-72353bc709a4)  
-
+ 
 ![Simulator Screenshot - iPhone 16 Pro - 2024-10-02 at 19 01 33](https://github.com/user-attachments/assets/53f6d835-ca8b-4fe3-94d1-ee8d3573d65e)
 
 ![Simulator Screenshot - iPhone 16 Pro - 2024-10-02 at 19 01 46](https://github.com/user-attachments/assets/31da77f7-1f49-4aa0-bde5-6389deeaaadf)
