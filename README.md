@@ -30,7 +30,8 @@ Design pattern used:<br />
 • Protocol Oriented Programming<br />
 • Solid priciples applied<br />
 
-Requirements to acheived:
+Requirements to acheived:<br />
+• Minimum iOS requirement: iOS 15.0<br />
 • Project is written in Swift.<br />
 • Unit tests written.<br />
 • Added Cocoapods: Snapkit for constraints. (Third party frameworks are permitted for any basic feature of the app.)<br /> 
@@ -40,6 +41,12 @@ Requirements to acheived:
 • Proper separation of responsibilities per MVVM architecture.<br />
 • Pure programmatically, no Storyboard. <br />
 • Applied proper threading.<br />
+
+Instruction to download:<br />
+• Download the code by clicking "code" button in the repository and select download zip.<br />
+• Double click the zip file and tap the folder Catminator-master and then double click the Catminator.xcworkspace<br />
+• Run in simulator.<br />
+• Run in device: First change the bundle identifier by your own bundle identifier in the General section of the app.<br />
 
 Screens for UI Design<br />
  
