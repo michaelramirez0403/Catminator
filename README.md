@@ -29,6 +29,8 @@ Design pattern used:<br />
 • MVVM<br />
 • Object Oriented Programming<br />
 • Solid priciples applied<br />
+• Delegation applied<br />
+• Singleton applied<br />
 
 Requirements to acheived:<br />
 • Minimum iOS requirement: iOS 15.0<br />
