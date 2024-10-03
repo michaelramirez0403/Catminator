@@ -1,47 +1,48 @@
-![Simulator Screenshot - iPhone 16 Pro - 2024-10-02 at 19 01 33](https://github.com/user-attachments/assets/bbbbe50b-eca1-4571-96d6-72353bc709a4)##  Catminator
-This is a take home project for the client Albertson.
+## Catminator
+This is a take home project for the client Albertson.<br />
 
 ## Instruction
-Core functionality:
+Core functionality:<br />
 • User opens the app and is presented with a random image of a cat along with a random cat fact.
 • Each subsequent tap on the screen will generate a new random image and new cat fact 
 
 Key Requirement:
-• Project is written in Swift
-• Use VIPER or MVVM architecture
-• Unit tests
-• Third party frameworks are permitted for any basic feature of the app. 
+• Project is written in Swift<br />
+• Use VIPER or MVVM architecture<br />
+• Unit tests<br />
+• Third party frameworks are permitted for any basic feature of the app.<br /> 
 
 ## Acceptance Criteria
-• App should compile and run successfully with minimal or no warnings  
-• User is presented with random cat facts and pics as well as correct interactions- APIs are called every time user taps screen
-• No crashing or other errors
-• Proper separation of responsibilities per MVVM or VIPER architecture
+• App should compile and run successfully with minimal or no warnings <br /> 
+• User is presented with random cat facts and pics as well as correct interactions- APIs are called every time user taps screen<br />
+• No crashing or other errors<br />
+• Proper separation of responsibilities per MVVM or VIPER architecture<br />
 
 ## Catminator App Introduction
-Prerequisites:
- Xcode Version 16.0
- Swift 5
- UIKit App Delegate
+Prerequisites:<br />
+ Xcode Version 16.0<br />
+ Swift 5<br />
+ UIKit App Delegate<br />
 
-Design pattern used:
- MVVM
- Protocol Oriented Programming
- Abstraction
- Solid priciples applied
+Design pattern used:<br />
+ MVVM<br />
+ Protocol Oriented Programming<br />
+ Abstraction<br />
+ Solid priciples applied<br />
 
 Requirements to acheived:
-• Project is written in Swift.
-• Unit tests written.
-• Added Cocoapods: Snapkit for constraints. (Third party frameworks are permitted for any basic feature of the app.) 
-• App compiled and run successfully with no warnings.
-• User is presented with random cat facts and pics as well as correct interactions- APIs are called every time user taps screen
-• No crashing or other errors
-• Proper separation of responsibilities per MVVM architecture.
-• Pure programmatically, no Storyboard. 
-• Applied proper threading.
+• Project is written in Swift.<br />
+• Unit tests written.<br />
+• Added Cocoapods: Snapkit for constraints. (Third party frameworks are permitted for any basic feature of the app.)<br /> 
+• App compiled and run successfully with no warnings.<br />
+• User is presented with random cat facts and pics as well as correct interactions- APIs are called every time user taps screen.<br />
+• No crashing or other errors.<br />
+• Proper separation of responsibilities per MVVM architecture.<br />
+• Pure programmatically, no Storyboard. <br />
+• Applied proper threading.<br />
 
-Screens for UI Design
+Screens for UI Design<br />
+![Simulator Screenshot - iPhone 16 Pro - 2024-10-02 at 19 01 33](https://github.com/user-attachments/assets/bbbbe50b-eca1-4571-96d6-72353bc709a4)  
 
 ![Simulator Screenshot - iPhone 16 Pro - 2024-10-02 at 19 01 33](https://github.com/user-attachments/assets/53f6d835-ca8b-4fe3-94d1-ee8d3573d65e)
 
