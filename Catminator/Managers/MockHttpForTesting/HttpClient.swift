@@ -44,7 +44,7 @@ class MockURLSession: URLSessionProtocol {
     var nextDataTask = MockURLSessionDataTask()
     var nextData: Data?
     var nextError: Error?
-    private (set) var lastURL: URL?
+    private(set) var lastURL: URL?
     func successHttpURLResponse(request: URLRequest) -> URLResponse {
         return HTTPURLResponse(url: request.url!,
                                statusCode: 200,
@@ -60,7 +60,7 @@ class MockURLSession: URLSessionProtocol {
     }
 }
 class MockURLSessionDataTask: URLSessionDataTaskProtocol {
-    private (set) var resumeWasCalled = false
+    private(set) var resumeWasCalled = false
     func resume() {
         resumeWasCalled = true
     }
