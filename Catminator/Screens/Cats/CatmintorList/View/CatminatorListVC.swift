@@ -83,7 +83,7 @@ extension CatminatorListVC: UICollectionViewDelegate {
         let height          = scrollView.frame.size.height
         if offsetY > contentHeight - height {
             guard viewModel.hasMoreCats, !viewModel.isLoadingMoreCats else { return }
-            viewModel.getCats()
+//            viewModel.getCats()
         }
     }
 }

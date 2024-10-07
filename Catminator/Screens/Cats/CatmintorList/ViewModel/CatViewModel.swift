@@ -13,22 +13,25 @@ class CatViewModel: BaseViewModel  {
     func getCats() {
         self.delegate?.loading()
         isLoadingMoreCats = true
-        NetworkManager.shared.getCats() { [weak self] result in
+        NetworkManager.shared.getCats { [weak self] result in
             guard let self = self else { return }
-            self.delegate?.dismiss()
-            switch result {
-            case .success(let cats):
-                print(cats)
-                cats.response?.enumerated().forEach { (index, desc) in
+            if case .success(let items) = result {
+                self.delegate?.dismiss()
+                self.cats = items.response?.enumerated().map { index, desc in
                     let randomString = String().randomString(of: Collection.randomStringLength)
-                    let meow = Cat(id: index, catdesc: desc, catUrl: Images.ramdomCatUrl+"?_id=\(randomString)")
-                    self.cats.append(meow)
-                }
+                    return Cat(id: index,
+                               catdesc: desc,
+                               catUrl: "\(Images.ramdomCatUrl)?_id=\(randomString)")
+                } ?? []
+                self.isLoadingMoreCats = false
                 self.updateDateSource(self.cats.uniqued())
-            case .failure(let error):
-                self.delegate?.didRequestFailed(error: error)
+            } else if case .failure(let error) = result {
+                switch error {
+                case .invalidUsername, .invalidResponse,.invalidData, .unableToComplete:
+                    self.delegate?.didRequestFailed(error: .unableToComplete)
+                case .unableToFavorite, .alreadyInFavorites: break
+                }
             }
-            self.isLoadingMoreCats = false
         }
     }
     // MARK: - CollectionView DataSource
