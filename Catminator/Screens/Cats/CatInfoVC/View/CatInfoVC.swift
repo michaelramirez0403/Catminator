@@ -5,7 +5,6 @@
 import UIKit
 class CatInfoVC: BaseViewController {
     let viewModel = CatInfoViewModel()
-    var cat: Cat!
     let avatarImageView     = GFAvatarImageView(frame: .zero)
     let bioLabel            = GFSecondaryTitleLabel(fontSize: 20)
     let getStartedButton    = CatButton(backgroundColor: .systemPink, title: "Click me for a surprise.")
@@ -30,7 +29,7 @@ class CatInfoVC: BaseViewController {
             let image = UIImage(data: decoded)
             DispatchQueue.main.async {
                 self.avatarImageView.image = image
-                self.bioLabel.text = self.cat.catdesc ?? "No description available."
+                self.bioLabel.text = self.viewModel.cat?.catdesc ?? "No description available."
             }
         }
     }
@@ -59,13 +58,12 @@ class CatInfoVC: BaseViewController {
         getStartedButton.addTarget(self, action: #selector(pushCatListVC), for: .touchUpInside)
     }
     @objc func pushCatListVC() {
-        viewModel.getRandomCats()
+//        viewModel.getRandomCat()
+        let cat = viewModel.randomCat()
+        didRequestSuccess(cat)
     }
     @objc func dismssVC() {
         dismiss(animated: true)
-    }
-    func downloadImage() {
-        
     }
 }
 extension CatInfoVC: CatDelegate {

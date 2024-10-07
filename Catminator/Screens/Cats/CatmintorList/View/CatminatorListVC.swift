@@ -45,11 +45,12 @@ class CatminatorListVC: BaseViewController, CatDelegate {
         guard let indexPath = selectedIndex else {
             return
         }
-        let index           = indexPath.row
-        let cat             = viewModel.cats[index]
-        let destVC          = CatInfoVC()
-        destVC.cat          = cat
-        let navController   = UINavigationController(rootViewController: destVC)
+        let index               = indexPath.row
+        let cat                 = viewModel.cats[index]
+        let destVC              = CatInfoVC()
+        destVC.viewModel.cat    = cat
+        destVC.viewModel.cats   = viewModel.cats
+        let navController       = UINavigationController(rootViewController: destVC)
         present(navController, animated: true)
     }
     // MARK: - CatDelegate

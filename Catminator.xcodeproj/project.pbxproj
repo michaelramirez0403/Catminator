@@ -36,6 +36,7 @@
 		74D010182CAD26850027A18B /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D010172CAD26850027A18B /* Array+Ext.swift */; };
 		74D0101A2CAD2DB60027A18B /* CatInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D010192CAD2DB60027A18B /* CatInfoVC.swift */; };
 		74D0101C2CAD447B0027A18B /* CatInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D0101B2CAD447B0027A18B /* CatInfoViewModel.swift */; };
+		74FA8BA22CB3ABE7001D96CD /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FA8BA12CB3ABE7001D96CD /* String+Ext.swift */; };
 		BE3CD837136F64CF0AC809D3 /* Pods_Catminator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECE96849BEF363933480613 /* Pods_Catminator.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		74D010172CAD26850027A18B /* Array+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Ext.swift"; sourceTree = "<group>"; };
 		74D010192CAD2DB60027A18B /* CatInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatInfoVC.swift; sourceTree = "<group>"; };
 		74D0101B2CAD447B0027A18B /* CatInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatInfoViewModel.swift; sourceTree = "<group>"; };
+		74FA8BA12CB3ABE7001D96CD /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		851355C81BA84C14F4E8DB80 /* Pods-Catminator-CatminatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catminator-CatminatorUITests.debug.xcconfig"; path = "Target Support Files/Pods-Catminator-CatminatorUITests/Pods-Catminator-CatminatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E17EB12E132DBD8D96D9D29A /* Pods-CatminatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatminatorTests.release.xcconfig"; path = "Target Support Files/Pods-CatminatorTests/Pods-CatminatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		F690F7BD9304D42D6E1FB9BB /* Pods_CatminatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatminatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -262,6 +264,7 @@
 				74A571ED2CACF01C001F78E7 /* UIViewController+Ext.swift */,
 				74A571EF2CACF01C001F78E7 /* UIView+Ext.swift */,
 				74D010172CAD26850027A18B /* Array+Ext.swift */,
+				74FA8BA12CB3ABE7001D96CD /* String+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				74D010142CAD098A0027A18B /* CatViewModel.swift in Sources */,
 				74D010032CACFDF90027A18B /* CatminatorListVC.swift in Sources */,
 				74A571FB2CACF059001F78E7 /* GFBodyLabel.swift in Sources */,
+				74FA8BA22CB3ABE7001D96CD /* String+Ext.swift in Sources */,
 				74A571FC2CACF059001F78E7 /* GFSecondaryTitleLabel.swift in Sources */,
 				74A572122CACF09E001F78E7 /* GFAlertContainerView.swift in Sources */,
 				74D010122CAD09140027A18B /* CatCell.swift in Sources */,

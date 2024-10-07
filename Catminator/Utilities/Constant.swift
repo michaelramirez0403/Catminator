@@ -5,6 +5,11 @@
 //
 import UIKit
 let blank_ = ""
+enum Collection {
+    static let randomStringLength = 4
+    static let limit = 100
+    static let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+}
 enum TitleAppLabel {
     static let emptyStateTitle = "No Data"
     static let titleApp        = "Catminator"

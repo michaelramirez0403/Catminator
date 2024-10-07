@@ -20,7 +20,8 @@ class CatViewModel: BaseViewModel  {
             case .success(let cats):
                 print(cats)
                 cats.response?.enumerated().forEach { (index, desc) in
-                    let meow = Cat(id: index, catdesc: desc, catUrl: Images.ramdomCatUrl)
+                    let randomString = String().randomString(of: Collection.randomStringLength)
+                    let meow = Cat(id: index, catdesc: desc, catUrl: Images.ramdomCatUrl+"?_id=\(randomString)")
                     self.cats.append(meow)
                 }
                 self.updateDateSource(self.cats.uniqued())
@@ -54,13 +55,12 @@ class CatViewModel: BaseViewModel  {
         })
     }
     func updateDateSource(_ cats: [Cat]) {
-        if cats.count > 18 {
+        if cats.count > Collection.limit {
             self.hasMoreCats = false
-            let message = "I only have 18 cats. Go home and live your life 😀."
+            let message = "I only have \(Collection.limit) cats. Go home and live your life 😀."
             self.delegate?.show(message)
             return
         }
-        
         var snapshot = NSDiffableDataSourceSnapshot<Section, Cat>()
         snapshot.appendSections([.main])
         snapshot.appendItems(cats)
